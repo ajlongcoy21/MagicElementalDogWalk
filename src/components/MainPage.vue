@@ -9,9 +9,17 @@
 </template>
 
 <style scoped>
-.image {
+img {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
+img {
+  width: 100%;
+  height: auto;
+  /* Magic! */
+  max-width: 50vw;
+}
+
 </style>

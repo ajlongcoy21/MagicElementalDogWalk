@@ -33,4 +33,14 @@ npm run build
 ```sh
 npm run lint
 ```
-# MagicElementalDogWalk
+
+### Deploy to GitHub Pages
+
+The following commands updated and deploy the `dist` folder to GitHub Pages.
+
+```sh
+npm run build
+git add .
+git commit -m '<COMMIT MESSAGE>'
+npm run deploy
+```
