@@ -20,7 +20,7 @@ img {
   width: 100%;
   height: auto;
   /* Magic! */
-  max-width: 50vw;
+  max-width: 60vw;
   position: absolute;
   left: 50%;
   top: 50%;
