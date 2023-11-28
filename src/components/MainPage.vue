@@ -23,9 +23,10 @@ div {
 
 img {
   /* Have image resize based on the view size */
-  width: 100%;
+  width: auto;
   height: auto;
-  max-width: 60vw;
+  max-width: 85vw;
+  max-height: 85vh;
   /* Center within View */
   position: absolute;
   left: 50%;
