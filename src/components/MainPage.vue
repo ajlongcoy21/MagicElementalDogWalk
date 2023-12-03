@@ -7,35 +7,10 @@ const isDark = usePreferredDark()
 </script>
 
 <template>
-  <div id="image">
-    <img class="center" src="@/assets/images/logo_medw_nobg_white_lines.png" alt="logo" v-if="isDark">
-    <img class="center" src="@/assets/images/logo_medw_nobg_black_lines.png" alt="logo" v-if="!isDark">
+  <div class="fill column items-center justify-center content-center">
+    <img class="col-auto" style="min-width: 100%; max-width: 100%; min-height: auto;" src="@/assets/images/logo_medw_nobg_white_lines.png" alt="logo" v-if="isDark">
+    <img class="col-auto" style="min-width: 100%; max-width: 100%; min-height: auto;" src="@/assets/images/logo_medw_nobg_black_lines.png" alt="logo" v-if="!isDark">
+    <q-btn class="col glossy q-mt-md" label="START" to="/about" color="warning">
+    </q-btn>
   </div>
 </template>
-
-<style scoped>
-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-img {
-  /* Have image resize based on the view size */
-  width: auto;
-  height: auto;
-  max-width: 85vw;
-  max-height: 85vh;
-  /* Center within View */
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.center {
-  text-align: center;
-}
-
-</style>
