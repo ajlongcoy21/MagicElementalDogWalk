@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CharacterPage from '../components/CharacterPage.vue'
+import DogPage from '../components/DogPage.vue'
+import ShopPage from '../components/ShopPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,22 +28,22 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: CharacterPage
     },
-    // {
-    //   path: '/dog',
-    //   name: 'dog',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (About.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import('../components/DogPage.vue')
-    // },
-    // {
-    //   path: '/shop',
-    //   name: 'shop',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (About.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import('../components/ShopPage.vue')
-    // }
+    {
+      path: '/dog',
+      name: 'dog',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => DogPage
+    },
+    {
+      path: '/shop',
+      name: 'shop',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => ShopPage
+    }
   ]
 })
 
