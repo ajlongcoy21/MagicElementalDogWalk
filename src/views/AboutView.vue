@@ -2,7 +2,7 @@
   <q-layout view="hHh lpR fFf">
 
     <q-page-container>
-      <RouterView />
+      <!-- <RouterView /> -->
     </q-page-container>
 
     <q-footer reveal elevated class="bg-warning text-black">
