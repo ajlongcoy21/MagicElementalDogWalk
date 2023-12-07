@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hHh lpR fFf">
 
-    <div>DOG PAGE</div>
+    <div>DOG PAGE TEST</div>
 
     <q-footer reveal elevated class="bg-warning text-black">
       <q-tabs align="center">
