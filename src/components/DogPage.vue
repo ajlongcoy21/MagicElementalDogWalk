@@ -1,7 +1,62 @@
 <template>
   <q-layout view="hHh lpR fFf">
-
-    <div>DOG PAGE TEST</div>
+    <q-page-container>
+      <q-page class="fixed-top row justify-center items-center">
+        <q-carousel
+          animated
+          v-model="slide"
+          arrows
+          navigation
+          infinite
+          style='height: auto; width: 70vw;'
+        >
+          <q-carousel-slide :name="1" class="column bg-green">
+            <q-img
+              src="@/assets/images/earth_dog_final.png"
+              spinner-color="white"
+              fit="scale-down"
+            >
+              <div class="absolute-top text-subtitle1 text-weight-bolder text-center">
+                EARTH
+              </div>
+            </q-img>
+          </q-carousel-slide>  
+          <q-carousel-slide :name="2" class="column bg-orange">
+            <q-img
+              src="@/assets/images/fire_dog_final.png"
+              spinner-color="white"
+              fit="scale-down"
+            >
+              <div class="absolute-top text-subtitle1 text-weight-bolder text-center">
+                FIRE
+              </div>
+            </q-img>
+          </q-carousel-slide>  
+          <q-carousel-slide :name="3" class="column bg-teal">
+            <q-img
+              src="@/assets/images/water_dog_final.png"
+              spinner-color="white"
+              fit="scale-down"
+            >
+              <div class="absolute-top text-subtitle1 text-weight-bolder text-center">
+                WATER
+              </div>
+            </q-img>
+          </q-carousel-slide>  
+          <q-carousel-slide :name="4" class="column bg-grey">
+            <q-img
+              src="@/assets/images/wind_dog_final.png"
+              spinner-color="white"
+              fit="scale-down"
+            >
+              <div class="absolute-top text-subtitle1 text-weight-bolder text-center">
+                WIND
+              </div>
+            </q-img>
+          </q-carousel-slide>
+        </q-carousel>
+      </q-page>
+    </q-page-container>
 
     <q-footer reveal elevated class="bg-warning text-black">
       <q-tabs align="center">
@@ -14,3 +69,17 @@
     </q-footer>
   </q-layout>
 </template>
+
+<script>
+  import { QImg } from 'quasar';
+import { ref } from 'vue'
+
+  export default {
+    setup() {
+        return {
+            slide: ref(1)
+        };
+    },
+    components: { QImg }
+}
+</script>
