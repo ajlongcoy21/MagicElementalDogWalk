@@ -16,7 +16,7 @@
                 spinner-color="white"
                 fit="scale-down"
               >
-                <div class="absolute-bottom text-subtitle1 text-weight-bolder text-center">
+                <div class="absolute-top text-subtitle1 text-weight-bolder text-center">
                   EARTH
                 </div>
               </q-img>
@@ -27,7 +27,7 @@
                 spinner-color="white"
                 fit="scale-down"
               >
-                <div class="absolute-bottom text-subtitle1 text-weight-bolder text-center">
+                <div class="absolute-top text-subtitle1 text-weight-bolder text-center">
                   FIRE
                 </div>
               </q-img>
@@ -38,7 +38,7 @@
                 spinner-color="white"
                 fit="scale-down"
               >
-                <div class="absolute-bottom text-subtitle1 text-weight-bolder text-center">
+                <div class="absolute-top text-subtitle1 text-weight-bolder text-center">
                   WATER
                 </div>
               </q-img>
@@ -49,7 +49,7 @@
                 spinner-color="white"
                 fit="scale-down"
               >
-                <div class="absolute-bottom text-subtitle1 text-weight-bolder text-center">
+                <div class="absolute-top text-subtitle1 text-weight-bolder text-center">
                   WIND
                 </div>
               </q-img>
