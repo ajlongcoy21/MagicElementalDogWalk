@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hHh lpR fFf">
 
-    <div>SHOP PAGE</div>
+    <div>WALK PAGE</div>
 
     <q-footer reveal elevated class="bg-warning text-black">
       <q-tabs align="center">

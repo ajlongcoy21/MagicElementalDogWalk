@@ -9,6 +9,8 @@
       <q-tabs align="center">
           <q-route-tab to="/character" name="character" icon="person" label="Character" />
           <q-route-tab to="/dog" name="dog" icon="pets" label="Dog" />
+          <q-route-tab to="/map" name="map" icon="map" label="Map" />
+          <q-route-tab to="/walk" name="walk" icon="directions_walk" label="Walk" />
           <q-route-tab to="/shop" name="shop" icon="shopping_bag" label="Shop" />
       </q-tabs>
     </q-footer>

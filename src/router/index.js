@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CharacterPage from '../components/CharacterPage.vue'
 import DogPage from '../components/DogPage.vue'
+import MapPage from '../components/MapPage.vue'
+import WalkPage from '../components/WalkPage.vue'
 import ShopPage from '../components/ShopPage.vue'
 
 const router = createRouter({
@@ -35,6 +37,22 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: DogPage
+    },
+    {
+      path: '/map',
+      name: 'map',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: MapPage
+    },
+    {
+      path: '/walk',
+      name: 'walk',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: WalkPage
     },
     {
       path: '/shop',
