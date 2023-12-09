@@ -14,7 +14,7 @@
           <q-card-section class="q-pt-none">
             Please click on the tabs below to see the designs
                         the team has made. The app is still under contruction
-                        and will continue to be built following their desing specs.
+                        and will continue to be built following their design specs.
                         This is an initial demo.
           </q-card-section>
         </q-card>
