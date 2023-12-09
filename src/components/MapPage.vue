@@ -1,14 +1,14 @@
 <template>
   <q-layout view="hHh lpR fFf">
     <q-page-container>
-      <q-page padding>
+      <q-page class="window-height window-width row justify-center items-center">
         <q-carousel
           animated
           v-model="slide"
           arrows
           navigation
           infinite
-          style='height: 50vh; width: 50vw; padding-top: -50px;'
+          style='height: auto; width: 90vw;'
         >
           <q-carousel-slide :name="1" class="column bg-green">
             <q-img
