@@ -1,16 +1,19 @@
 <template>
     <q-layout view="hHh lpR fFf">
       <q-page-container>
-        <q-page class="fixed-top row justify-center items-center">
+        <q-page 
+          class="fixed-top row justify-center items-center"
+          style='max-height: 498px'
+        >
           <q-carousel
             animated
             v-model="slide"
             arrows
             navigation
             infinite
-            style='height: 70vh; width: 70vw;'
+            style='height: 70cqh; width: 70vw;'
           >
-            <q-carousel-slide :name="1" class="column bg-green">
+            <q-carousel-slide :name="1" class="column bg-green justify-center items-center">
               <q-img
                 src="@/assets/images/earth_map_final.png"
                 spinner-color="white"
@@ -21,7 +24,7 @@
                 </div>
               </q-img>
             </q-carousel-slide>  
-            <q-carousel-slide :name="2" class="column bg-orange">
+            <q-carousel-slide :name="2" class="column bg-orange justify-center items-center">
               <q-img
                 src="@/assets/images/fire_map_final.png"
                 spinner-color="white"
@@ -32,7 +35,7 @@
                 </div>
               </q-img>
             </q-carousel-slide>  
-            <q-carousel-slide :name="3" class="column bg-teal">
+            <q-carousel-slide :name="3" class="column bg-teal justify-center items-center">
               <q-img
                 src="@/assets/images/water_map_final.png"
                 spinner-color="white"
@@ -43,7 +46,7 @@
                 </div>
               </q-img>
             </q-carousel-slide>  
-            <q-carousel-slide :name="4" class="column bg-grey">
+            <q-carousel-slide :name="4" class="column bg-grey justify-center items-center">
               <q-img
                 src="@/assets/images/air_map_final.png"
                 spinner-color="white"
